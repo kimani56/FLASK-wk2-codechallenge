@@ -4,6 +4,7 @@ from flask import Flask, make_response, jsonify, request
 from flask_migrate import Migrate
 from flask_restful import Api,Resource, reqparse
 from models import Hero, Power, HeroPower
+from flask_cors import CORS
 
 from models import db, Hero
 
@@ -16,6 +17,8 @@ migrate = Migrate(app, db)
 
 db.init_app(app)
 api = Api(app)
+
+CORS(app)
 
 class Home(Resource):
     def get(self):
