@@ -7,6 +7,7 @@ from models import Hero, Power, HeroPower
 
 from models import db, Hero
 
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
