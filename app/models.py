@@ -19,6 +19,7 @@ class Hero(db.Model, SerializerMixin):
     # Define the relationship with powers through HeroPower
     powers = db.relationship('Power', secondary='hero_power', back_populates='heroes')
 
+
 class Power(db.Model):
     __tablename__ = 'power'
 
