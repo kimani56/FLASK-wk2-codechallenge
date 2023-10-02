@@ -36,6 +36,7 @@ with app.app_context():
         db.session.add(hero)
 
     strengths = ["Strong", "Weak", "Average"]
+    
 
     heroes = Hero.query.all()
     powers = Power.query.all()
