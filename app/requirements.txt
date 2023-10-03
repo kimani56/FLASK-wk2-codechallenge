@@ -29,3 +29,4 @@ tomli
 typing_extensions
 Werkzeug
 flask-swagger-ui
+flask_cors
